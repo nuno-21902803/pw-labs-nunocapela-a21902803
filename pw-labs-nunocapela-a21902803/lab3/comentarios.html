@@ -25,10 +25,31 @@
 
             <form  method="post" action="nunofcapela@live.com.pt">
                 <fieldset>
-                <legend>Identificação:</legend>
-                <p>Nome: <input type="text" name="nome" placeholder ="Insira nome"></p>
-                <p>Apelido: <input type="text" name="apelido" placeholder ="Insira apelido"></p>
-                <p>Email: <input type="text"name="email" placeholder ="Insira email"></p>
+                <legend>Deixe a sua opinião sobre o website:</legend>
+
+
+                <p>Qual a classificação pessoal sobre o site?<br>
+                    <input type="radio" name="opinion1" value="good">
+                    <label for="good">Muito Bom</label><br>
+                    <input type="radio" name="opinion1" value="notSoGood">
+                    <label for="notSoGood">Razoável</label><br>
+                    <input type="radio" name="opinion1" value="bad">
+                    <label for="bad">Mau</label><br>
+                </p>
+
+
+                <label for="bledReview">Diga a sua opinião e sugestões construtivas caso tenha:</label>
+                <br>
+                <textarea id="bledReview" name="bledReview" rows="2" cols="70">
+                </textarea>
+
+                <p>De 0-10 quão certa é que acha que a informação do site é?
+                    <input type="range" id="vol" name="vol" min="0" max="10"><br>
+                </p>
+
+                <p>De 0-10 qual a probabilidade de recomendar o site a um amigo seu?
+                    <input type="range" id="vol" name="vol" min="0" max="10"><br>
+                </p>
 
                 <input type="submit" value = "Submeter Dados">
                 </fieldset>
