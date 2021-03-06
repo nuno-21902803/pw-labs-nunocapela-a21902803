@@ -23,7 +23,7 @@
 
             <h3>Comentários</h3>
 
-            <form  method="post" action="nunofcapela@live.com.pt">
+            <form  method="post" action="nunofcapela@live.com.pt" oninput="x0.value=parseInt(vol0.value)">
                 <fieldset>
                 <legend>Deixe a sua opinião sobre o website:</legend>
 
@@ -44,11 +44,14 @@
                 </textarea>
 
                 <p>De 0-10 quão certa é que acha que a informação do site é?
-                    <input type="range" id="vol" name="vol" min="0" max="10"><br>
+                    <input type="range" id="vol0" name="vol0" min="0" max="10">
+                    <output name="x0" for="vol0"></output>
+                    <br>
                 </p>
 
                 <p>De 0-10 qual a probabilidade de recomendar o site a um amigo seu?
-                    <input type="range" id="vol" name="vol" min="0" max="10"><br>
+                    <input type="range" id="vol1" name="vol1" min="0" max="10">
+                    <br>
                 </p>
 
                 <input type="submit" value = "Submeter Dados">
