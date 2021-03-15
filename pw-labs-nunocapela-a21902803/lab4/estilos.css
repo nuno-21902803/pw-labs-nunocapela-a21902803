@@ -1,0 +1,19 @@
+div  p{
+    background-color:skyblue;
+}
+
+section > h3{
+    background-color: steelblue;
+}
+
+h1{
+color: skyblue;
+}
+
+a[target = _blank]{
+    background-color: snow;
+}
+
+#introImp{
+    background-color: steelblue;
+}
