@@ -1,19 +1,39 @@
+
+body{
+    
+    font-family: 'Akaya Telivigala';font-size: 17px;
+    background-color: aqua;
+}
+
 div  p{
-    background-color:skyblue;
+    background-color:red;
 }
 
 section > h3{
-    background-color: steelblue;
+    background-color: blue;
 }
 
-h1{
-color: skyblue;
+h3{
+    background-color: violet;
+}
+
+section + h3{
+color: violet;
 }
 
 a[target = _blank]{
-    background-color: snow;
+    background-color: springgreen;
 }
 
 #introImp{
     background-color: steelblue;
+}
+
+a:link {color: rgb(136, 0, 113)}
+a:visited{color: darkblue}
+a:hover{color: yellow}
+a:active{color: red}
+
+a::before{
+    content: "👉";
 }
