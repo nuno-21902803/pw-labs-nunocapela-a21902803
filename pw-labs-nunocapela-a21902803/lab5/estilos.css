@@ -84,7 +84,7 @@ div.introAnime{
     justify-content:left;
     animation-name: animation;
     animation-duration: 2s;
-    animation-iteration-count: 2000;
+    animation-iteration-count: infinite;
 }
 
 @keyframes animation {
