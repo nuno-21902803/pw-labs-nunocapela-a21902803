@@ -1,0 +1,132 @@
+
+body{
+    
+    font-family: 'Akaya Telivigala';font-size: 17px;
+    background-color: aqua;
+}
+
+div  p{
+    background-color:rgb(108, 214, 179);
+}
+
+section > h3{
+    background-color: rgb(73, 73, 236);
+}
+
+h3{
+    background-color: violet;
+}
+
+aside{
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color:rgb(86, 86, 172);
+}
+
+section + h3{
+color: violet;
+}
+
+a[target = _blank]{
+    background-color: rgb(253, 255, 254);
+}
+
+#introImp{
+    background-color: steelblue;
+}
+
+#introImp::first-letter{
+    font-size: 30px;
+    color:black;
+    opacity: 0.7;
+}
+
+#poema{
+    background-color: blueviolet;
+}
+
+a:link {color: rgb(136, 0, 113)}
+a:visited{color: darkblue}
+a:hover{color: yellow}
+a:active{color: red}
+
+a::before{
+    content: "👉";
+}
+
+p.quizz {display: list-item;}
+
+h2.escondido {
+    visibility: hidden;
+    height: 2px;
+}
+
+
+p.galeria{
+    background-color: brown;
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+div.introAnime{
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: 2000;
+}
+
+.flexbox {
+    display: flex;
+    height: 220px;
+    justify-content:left;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: 2000;
+}
+
+@keyframes animation {
+    from {background-color: red;}
+    to {background-color: rgb(6, 65, 155);}
+  }
+
+  .flexbox > div {
+    
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .gal_1_1:hover{
+    filter: blur(5px);
+  }
+
+  .gal_1_2:hover{
+    filter:contrast(200%) brightness(150%);
+  }
+
+  .gal_2_1:hover{
+    filter:sepia(100%);
+  }
+
+  .gal_2_2:hover{
+    filter:saturate(8);
+  }
+
+  .gal_3_1:hover{
+    filter:invert(100%);
+  }
+
+  .gal_3_2:hover{
+    filter:hue-rotate(90deg);
+  }
+
+  
+  .gal_4_1:hover{
+    filter: brightness(50%);
+  }
+
+  .gal_4_2:hover{
+    filter: grayscale(100%);
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <header>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="Nuno Capela">
+        <meta name="keywords" content="interrail">
+        <meta name="description" content="Website sobre Bled">
+        <title>Bled</title>
+        <link rel="shortcut icon" href="images/city.ico" type="image/x-icon">
+        <link rel="stylesheet" href="estilos.css">
+        <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
+
+    </header>
+    <body>
+    
+            <h1>Bled</h1>
+            <img src="images/city.jpg">
+            <br> 
+
+        <nav>
+            <a href="index.html">Introdução</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="comentarios.html">Comentarios</a>
+            <a href="quizz.html"><b>Quizz</b></a>
+            <a href="html5-css.html">HTML5 e CSS</a>
+            <a href="../index.html">Home</a>
+        </nav>
+        
+
+    <main>
+
+        <section>
+            <h3>Quizz</h3>
+
+            <form  method="post" action="nunofcapela@live.com.pt" autocomplete="on">
+                <fieldset>
+                <legend>Identificação:</legend>
+                <p>Nome: <input type="text" name="nome" placeholder ="Insira nome" autofocus  required></p>
+                <p>Apelido: <input type="text" name="apelido" placeholder ="Insira apelido"></p>
+                <p>Email: <input type="text"name="email" placeholder ="Insira email" required></p>
+
+                <input type="submit" value = "Submeter Dados">
+                </fieldset>
+            </form>
+
+
+            <form  method="post" action="nunofcapela@live.com.pt" oninput="x.value=parseInt(vol.value)">
+                <fieldset>
+                <legend>Quizz:</legend>
+                
+                <p class="quizz">Bled fica em que continente?
+                    <input type="text" name="answer0" placeholder="Insira a resposta"></p>
+            <div>
+                <p class="quizz"> 
+                    Bled fica em que país?
+                    <input type="radio" name="answer1" value="eslovaquia">
+                    <label for="eslovaquia">Eslováquia</label>
+                    <input type="radio" name="answer1" value="eslovenia">
+                    <label for="eslovenia">Eslovénia</label>
+                    <input type="radio" name="answer1" value="letonia">
+                    <label for="letonia">Letónia</label>
+                </p>
+            </div>
+                <p class="quizz">Quantos anos tem a cidade Bled?
+                    <input type="number" step="10">
+                </p>
+
+                <p class="quizz">Data da fundação do castelo do Lago Bled: 
+                    <input type="date" name="dataAnswer2">
+                </p>
+            <div>
+                <p class="quizz">Selecione as fronteiras da Eslovénia:
+                <input type="checkbox"  name="checkboxAns0" value="Austria">
+                <label for= "Austria"> Austria </label>
+                <input type="checkbox"  name="checkboxAns1" value="Croacia">
+                <label for= "Croacia"> Croacia </label>
+                <input type="checkbox"  name="checkboxAns2" value="Portugal">
+                <label for="Portugal"> Portugal </label>
+                </p>
+            </div>
+
+            <p class="quizz">
+                <label for="favcolor">Que cor te faz lembrar Bled?</label>
+                <input type="color" id="favcolor" name="favcolor" value="#FFFFFF">
+            </p>   
+
+                <p class="quizz">Quantas pessoas é que vivem em Bled de 0-10.000 (aprox) ?:
+                <input type="range" id="vol" name="vol" min="0" max="10000" >
+                    <output name="x" for="vol"></output>
+                </p>
+        
+                <input type="submit" value="Submeter Quizz">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <div class="footer">
+        <footer>
+            <p>Nuno Capela, 21902803, Uni. Lusófona, 2ºano </p>
+        </footer>
+    </div>
+    
+    </body>
+</html>
